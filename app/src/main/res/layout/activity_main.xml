@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/article"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/pading"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold"
+        android:text="@string/article_string"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/article_subheading"
+        android:layout_below="@id/article"
+        android:padding="@dimen/pading"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:text="@string/article_subheading"
+        android:background="@color/design_default_color_primary_dark"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_subheading"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paragraf"
+        android:id="@+id/paragraf"
+        android:autoLink="web"
+        android:layout_below="@id/article_subheading"
+        android:lineSpacingExtra="5dp"
+        android:padding="@dimen/pading"
+        />
+    </ScrollView>
+
+</RelativeLayout>
